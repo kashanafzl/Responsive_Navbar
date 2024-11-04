@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Layout</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <!-- Contact Us Button inside ul for mobile view -->
+                <li class="contact-mobile">
+                    <button class="gradient-button">Contact Us</button>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-container">
+            <button class="gradient-button">Contact Us</button>
+        </div>
+        <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-container').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -150,4 +150,10 @@ body {
         display: block;
         text-align: center;
     }
+
+    .header-container {
+        padding: 2rem 2rem;
+   
+    }
+
 }

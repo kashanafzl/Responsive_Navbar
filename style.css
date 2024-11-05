@@ -88,6 +88,24 @@ body {
     outline: none;
 }
 
+.btnmainf{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gradient-button2{
+    background: transparent;
+    border: 1px solid black;
+    color: gray;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 /* Hide mobile contact button initially */
 .contact-mobile {
     display: none;
@@ -103,6 +121,49 @@ body {
     color: #646161;
 }
 
+
+.herosection{
+    padding-inline: 8rem;
+    padding-block: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.herocontent h1{
+    font-size: 6rem;
+    letter-spacing: 1rem;
+}
+
+.herocontent p{
+    font-size: 1.6rem;
+    color: gray;
+    padding-block: 1rem;
+}
+
+.heroimg img{
+    width: 550px;
+    transform: translateX(6rem);
+}
+
+
+.bugetdiv{
+    display: flex;
+    gap: 4rem;
+    padding-top: 3rem;
+}
+
+.bugetdiv h2{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+
+
+
+
 /* Sidebar Styles for Mobile */
 @media screen and (max-width: 800px) {
     .menu-toggle {
@@ -114,10 +175,11 @@ body {
     .nav-container {
         position: fixed;
         top: 0;
+        z-index: 1;
         left: -100%;
         height: 100vh;
         width: 250px;
-        background-color: #f3f371;
+        background-color: #fbfbfb;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -154,6 +216,31 @@ body {
     .header-container {
         padding: 2rem 2rem;
    
+    }
+
+    .heroimg img{
+        width: 550px;
+        transform: translateX(0rem);
+        padding-top: 5rem;
+    }
+
+    @media screen and (max-width: 500px) {
+     
+    .heroimg img{
+        width: 300px;
+    
+    }
+
+    .herocontent h1 {
+        line-height: 5rem;
+        font-size: 2.4rem;
+        letter-spacing: 1rem;
+    }
+
+    .herosection{
+        padding-inline: 4rem;
+    }
+
     }
 
 }

@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Professional Layout</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header class="header-container">
-        <div class="logo">
-            <img src="./img/logo.png" alt="Logo">
-        </div>
-        <div class="nav-container">
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">About</a></li>
-                <!-- Contact Us Button inside ul for mobile view -->
-                <li class="contact-mobile">
-                    <button class="gradient-button">Contact Us</button>
-                </li>
-            </ul>
-        </div>
-        <div class="contact-container">
+      <div class="logo">
+        <img src="./img/logo.png" alt="Logo" />
+      </div>
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <!-- Contact Us Button inside ul for mobile view -->
+          <li class="contact-mobile">
             <button class="gradient-button">Contact Us</button>
-        </div>
-        <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-container">
+        <button class="gradient-button">Contact Us</button>
+      </div>
+      <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
 
+    <!-- main section is start -->
+
+
+    <div class="herosection">
+        <div class="herocontent">
+            <h1>Take Care Of <br> Your Financial <br> Planning</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Lacus <br>
+                 sodales dui gravida eget dolor orcii.</p>
+           
+            <div class="btnmainf">
+                <button class="gradient-button">Contact Us</button>
+                <button class="gradient-button2">How's Its work</button>
+
+            
+            </div>
+
+            
+
+            <div class="bugetdiv">
+                <h2>5.78K</h2>
+                <h2>2.44K</h2>
+            </div>
+        </div>
+      
+          <div class="heroimg">
+            <img  src="./img/man.png" alt="" />
+          </div>
+    </div>
+
     <script>
-        function toggleMenu() {
-            document.querySelector('.nav-container').classList.toggle('active');
-        }
+      function toggleMenu() {
+        document.querySelector(".nav-container").classList.toggle("active");
+      }
     </script>
-</body>
+  </body>
 </html>
